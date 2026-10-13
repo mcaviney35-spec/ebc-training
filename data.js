@@ -33,4 +33,4 @@ const MILESTONES=[
 ["Sept 2028","Taper. Documents, visa info, insurance and passport copies sorted."],
 ["Oct 2028","Everest Base Camp. Take the photo, then walk back down carefully."]
 ];
-const TREK_DATE="2028-10-01";
+const TREK_DATE="2028-10-07";

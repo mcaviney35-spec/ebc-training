@@ -4,7 +4,7 @@ const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&g
 const fmt=ms=>{const s=Math.floor(ms/1000),h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return `${h}:${String(m).padStart(2,'0')}:${String(x).padStart(2,'0')}`};
 let map,watchId,tick;
 function cleanup(){if(map){map.remove();map=null}if(watchId!=null){navigator.geolocation.clearWatch(watchId);watchId=null}clearInterval(tick)}
-function countdown(){const d=Math.ceil((new Date(TREK_DATE)-new Date())/864e5);$('#cd').textContent=d>0?`${d} days to Base Camp (approx, 1 Oct 2028)`:'You made it, legend!'}
+function countdown(){const d=Math.ceil((new Date(TREK_DATE)-new Date())/864e5);$('#cd').textContent=d>0?`${d} days to Base Camp (trek starts 7 Oct 2028)`:'You made it, legend!'}
 function attempts(id){return LS.get('att_'+id,[])}
 function pb(id){const a=attempts(id);return a.length?a.reduce((b,x)=>x.ms<b.ms?x:b):null}
 function list(){cleanup();V.innerHTML=`<p class="muted">Nine Mourne routes, Terry. Pick one, hit Start, and away ye go.</p>`+ROUTES.map(r=>{const p=pb(r.id);return `<div class="card" onclick="location.hash='r/${r.id}'"><h3>${r.n}. ${esc(r.name)}${r.bench?' ⭐':''}</h3><span class="pill ${r.grade.split(' ')[0]}">${r.grade}</span><span class="muted">${r.dist} · ${r.asc} · ${r.time}</span>${p?`<div class="pb">PB ${fmt(p.ms)} · ${attempts(r.id).length} goes</div>`:''}</div>`}).join('')}
@@ -35,7 +35,7 @@ alert(!prev||ms<prev.ms?`New personal best: ${fmt(ms)}! Class.`:`Saved: ${fmt(ms
 window.delAtt=(id,d)=>{if(!confirm('Delete this attempt?'))return;LS.set('att_'+id,attempts(id).filter(x=>x.date!=d));route(id)};
 function plan(){cleanup();const today=new Date().toISOString().slice(0,10),done=LS.get('ms',{});const cur=PHASES.find(p=>today>=p.from&&today<=p.to);
 const n=Object.values(done).filter(Boolean).length;
-V.innerHTML=`<div class="card"><h3>⛰️ ${$('#cd').textContent}</h3><p class="muted">Trek date pencilled in as 1 Oct 2028 (approx) until it's booked. About 100 weekends, Terry, and the Mournes are on your doorstep.</p></div>
+V.innerHTML=`<div class="card"><h3>⛰️ ${$('#cd').textContent}</h3><p class="muted">Booked with EverTrek, 7 to 21 Oct 2028, you and Corey. About 100 weekends, Terry, and the Mournes are on your doorstep.</p></div>
 ${PHASES.map(p=>`<div class="card phase ${cur===p?'now':''}">${cur===p?'<span class="pill" style="background:#ffd166;color:#000">YOU ARE HERE</span>':''}<h3>Phase ${p.n}: ${p.name} – '${p.tag}'</h3><div class="muted">${p.dates} · Pack ${p.pack}</div><p>${p.goal}</p><ul>${p.week.map(w=>`<li>${esc(w)}</li>`).join('')}</ul></div>`).join('')}
 <div class="card"><h3>Milestones (${n}/${MILESTONES.length})</h3>${MILESTONES.map((m,i)=>`<label class="ms ${done[i]?'done':''}"><input type="checkbox" data-i="${i}" ${done[i]?'checked':''}><span><b>${m[0]}</b> – ${esc(m[1])}</span></label>`).join('')}</div>
 <p class="muted">Not medical advice: see your GP before ramping up.</p>`;
