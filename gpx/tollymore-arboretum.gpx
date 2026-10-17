@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="EBC training plan (route line from WalkNI/OutmoreNI)">
+  <trk>
+    <name>Tollymore Forest Park - Arboretum Path</name>
+    <trkseg>
+      <trkpt lat="54.22443908860347" lon="-5.9407448601696204">
+        <ele>86.8</ele>
+      </trkpt>
+      <trkpt lat="54.22459131541216" lon="-5.940765873380578">
+        <ele>87.9</ele>
+      </trkpt>
+      <trkpt lat="54.22469345556827" lon="-5.940822278477815">
+        <ele>89.0</ele>
+      </trkpt>
+      <trkpt lat="54.22478955236568" lon="-5.940866718412061">
+        <ele>89.9</ele>
+      </trkpt>
+      <trkpt lat="54.22494391262168" lon="-5.940930378157265">
+        <ele>91.3</ele>
+      </trkpt>
+      <trkpt lat="54.225053012384286" lon="-5.940973404438169">
+        <ele>92.3</ele>
+      </trkpt>
+      <trkpt lat="54.2251532252011" lon="-5.940994600885442">
+        <ele>93.2</ele>
+      </trkpt>
+      <trkpt lat="54.225278349368246" lon="-5.940981470272576">
+        <ele>93.9</ele>
+      </trkpt>
+      <trkpt lat="54.22543556093201" lon="-5.940932081574876">
+        <ele>94.4</ele>
+      </trkpt>
+      <trkpt lat="54.225604244713864" lon="-5.940754841077155">
+        <ele>93.9</ele>
+      </trkpt>
+      <trkpt lat="54.22568412315127" lon="-5.94063385759996">
+        <ele>93.5</ele>
+      </trkpt>
+      <trkpt lat="54.22579850439326" lon="-5.9406099110798305">
+        <ele>93.9</ele>
+      </trkpt>
+      <trkpt lat="54.2258898793644" lon="-5.940774970045211">
+        <ele>95.1</ele>
+      </trkpt>
+      <trkpt lat="54.225907985222705" lon="-5.940993210820692">
+        <ele>96.4</ele>
+      </trkpt>
+      <trkpt lat="54.22583217867386" lon="-5.9412106065429615">
+        <ele>97.3</ele>
+      </trkpt>
+      <trkpt lat="54.22564718692534" lon="-5.941500912888827">
+        <ele>98.6</ele>
+      </trkpt>
+      <trkpt lat="54.22551240913573" lon="-5.94169578512988">
+        <ele>99.4</ele>
+      </trkpt>
+      <trkpt lat="54.225417329888714" lon="-5.941773970950976">
+        <ele>99.7</ele>
+      </trkpt>
+      <trkpt lat="54.22528311696433" lon="-5.941823130356138">
+        <ele>99.7</ele>
+      </trkpt>
+      <trkpt lat="54.22511560062047" lon="-5.9419214852500515">
+        <ele>99.6</ele>
+      </trkpt>
+      <trkpt lat="54.22499575940421" lon="-5.942091571268658">
+        <ele>100.0</ele>
+      </trkpt>
+      <trkpt lat="54.224911928847874" lon="-5.942291725755448">
+        <ele>100.8</ele>
+      </trkpt>
+      <trkpt lat="54.224826350603" lon="-5.942541766301506">
+        <ele>101.9</ele>
+      </trkpt>
+      <trkpt lat="54.224842042203704" lon="-5.942705067067629">
+        <ele>103.2</ele>
+      </trkpt>
+      <trkpt lat="54.22479922666068" lon="-5.9429699840535255">
+        <ele>104.6</ele>
+      </trkpt>
+      <trkpt lat="54.224654182834875" lon="-5.943009765092034">
+        <ele>104.0</ele>
+      </trkpt>
+      <trkpt lat="54.22455806783291" lon="-5.942985256414721">
+        <ele>103.2</ele>
+      </trkpt>
+      <trkpt lat="54.224435854587746" lon="-5.942842588620009">
+        <ele>101.5</ele>
+      </trkpt>
+      <trkpt lat="54.22432651192942" lon="-5.94264852057843">
+        <ele>99.6</ele>
+      </trkpt>
+      <trkpt lat="54.2242346299668" lon="-5.942593294077222">
+        <ele>98.5</ele>
+      </trkpt>
+      <trkpt lat="54.224143030768346" lon="-5.942501704615711">
+        <ele>97.3</ele>
+      </trkpt>
+      <trkpt lat="54.224032060239146" lon="-5.9423067936047085">
+        <ele>95.0</ele>
+      </trkpt>
+      <trkpt lat="54.22402327706775" lon="-5.94212934824283">
+        <ele>93.7</ele>
+      </trkpt>
+      <trkpt lat="54.22402618803909" lon="-5.941973556111011">
+        <ele>92.4</ele>
+      </trkpt>
+      <trkpt lat="54.22397454051749" lon="-5.941785364611454">
+        <ele>90.3</ele>
+      </trkpt>
+      <trkpt lat="54.22403622193277" lon="-5.9415090298993185">
+        <ele>88.5</ele>
+      </trkpt>
+      <trkpt lat="54.22410692030892" lon="-5.941355538628687">
+        <ele>87.8</ele>
+      </trkpt>
+      <trkpt lat="54.224168898551426" lon="-5.941233301970753">
+        <ele>87.5</ele>
+      </trkpt>
+      <trkpt lat="54.22420772294813" lon="-5.941034011049117">
+        <ele>86.3</ele>
+      </trkpt>
+      <trkpt lat="54.22424016262851" lon="-5.94075545086759">
+        <ele>85.1</ele>
+      </trkpt>
+      <trkpt lat="54.22426891664406" lon="-5.9405977559509795">
+        <ele>84.6</ele>
+      </trkpt>
+      <trkpt lat="54.22431739408108" lon="-5.940726606674692">
+        <ele>85.7</ele>
+      </trkpt>
+      <trkpt lat="54.2244364267643" lon="-5.940749675934224">
+        <ele>86.8</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

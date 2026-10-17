@@ -1,6 +1,6 @@
-const C='ebc-v1',T='ebc-tiles';
-const SHELL=["./","index.html","style.css","app.js","data.js","manifest.webmanifest","vendor/leaflet.js","vendor/leaflet.css","icons/icon-192.png","icons/icon-512.png","icons/icon-180.png","gpx/binnian.gpx","gpx/donard-bloody-bridge.gpx","gpx/donard-commedagh-bearnagh.gpx","gpx/donard-glen-river.gpx","gpx/hares-gap.gpx","gpx/meelmore-meelbeg.gpx","gpx/mourne-wall.gpx","gpx/mourne-way-day1.gpx","gpx/mourne-way-day2.gpx","gpx/tollymore-river.gpx"];
-self.addEventListener('install',e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(SHELL)));self.skipWaiting()});
+const C='ebc-v2',T='ebc-tiles';
+const SHELL=["./","index.html","style.css","app.js","data.js","manifest.webmanifest","vendor/leaflet.js","vendor/leaflet.css","icons/icon-192.png","icons/icon-512.png","icons/icon-180.png","gpx/binnian.gpx","gpx/donard-bloody-bridge.gpx","gpx/donard-commedagh-bearnagh.gpx","gpx/donard-glen-river.gpx","gpx/hares-gap.gpx","gpx/meelmore-meelbeg.gpx","gpx/mourne-wall.gpx","gpx/mourne-way-day1.gpx","gpx/mourne-way-day2.gpx","gpx/tollymore-river.gpx","gpx/tollymore-arboretum.gpx","gpx/tollymore-mountain.gpx","gpx/tollymore-mountain-drinns.gpx"];
+self.addEventListener('install',e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(SHELL.map(u=>new Request(u,{cache:'reload'})))));self.skipWaiting()});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C&&x!==T).map(x=>caches.delete(x)))));self.clients.claim()});
 self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET')return;
 if(u.hostname.endsWith('tile.openstreetmap.org')){e.respondWith(caches.open(T).then(async c=>{const m=await c.match(e.request);if(m)return m;try{const r=await fetch(e.request);if(r.ok||r.type==='opaque')c.put(e.request,r.clone());return r}catch(x){return m||Response.error()}}));return}
